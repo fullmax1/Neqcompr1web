@@ -104,26 +104,26 @@
 
     /* Campo nombre ajustado para que no corte letras como "g", "y", "p" */
     #nombre {
-      top: calc(412.26px * var(--escala));
+      top: calc(415px * var(--escala));
       left: calc((17px + 20px) * var(--escala));
       line-height: 1.6;
       padding-bottom: 5px;
     }
     #valor {
-      top: calc((449.48px + 12px) * var(--escala));
+      top: calc((454px + 12px) * var(--escala));
       left: calc((17px + 20px) * var(--escala));
     }
     #nequi {
-      top: calc((449.48px + 57px) * var(--escala));
+      top: calc((454px + 57px) * var(--escala));
       left: calc((17px + 20px) * var(--escala));
     }
     #fecha {
-      top: calc((555px) * var(--escala));
+      top: calc((559px) * var(--escala));
       left: calc((39px) * var(--escala));
       white-space: normal;
     }
     #referencia {
-      top: calc((540.26px + 58px + 2px) * var(--escala));
+      top: calc((546px + 58px + 2px) * var(--escala));
       left: calc((17px + 20px) * var(--escala));
     }
 
@@ -346,7 +346,7 @@ function formatValor(valor) {
 
 function descargarComprobante(formato) {
   html2canvas(document.getElementById('captura'), {
-    scale: 6,
+    scale: 5,
     useCORS: true
   }).then(canvas => {
     const link = document.createElement('a');
